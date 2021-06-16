@@ -20,7 +20,7 @@ $('#titulo').click(function () {
 $('#titulo').css("font-size: 50px, margin:20px, background-color: EQBBE4 ")
 
 
-$('#redes').prepend("<h2>SEGUINOS</h2>");
+$('#contacto').prepend("<h2>SEGUINOS</h2>");
 
 
 

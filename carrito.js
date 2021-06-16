@@ -57,6 +57,7 @@ function agregarAlCarrito(id) {
 }
 
 
+
 function actualizarCarrito() {
     contadorCarrito.innerText = carritoDeCompras.length
     //localStorage.setItem('carritoDeCompras', JSON.stringify(carritoDeCompras))
