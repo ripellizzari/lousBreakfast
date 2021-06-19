@@ -2,7 +2,11 @@ let carritoDeCompras = []
 
 const contenedorProducto = document.getElementById('contenedor-galeria')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
-const contadorCarrito = document.getElementById('contador-carrito')
+const contadorCarrito = document.getElementById('contadorCarrito')
+let carrito = {}
+
+
+
 
 mostrarProductos(stockProductos)
 console.log(stockProductos)
@@ -31,18 +35,19 @@ function mostrarProductos(array) {
 
 
 function agregarAlCarrito(id) {
-    let productoAgregar = stockProductos.filter(el => el.id == id)[0]
+    let productoAgregar = stockProductos.filter((el) => el.id == id)[0]
     console.log(productoAgregar)
     carritoDeCompras.push(productoAgregar)
-    actualizarCarrito()
+    // actualizarCarrito()
 
     let div = document.createElement('div')
     div.classList.add('productoEnCarrito')
     div.innerHTML += `
     <p>${productoAgregar.nombre}</p>
-    <p>${productoAgregar.precio}</p>
-    <button id="${productoAgregar.id}"class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+    <p>Precio: ${productoAgregar.precio}</p>
+    <button id="eliminar${productoAgregar.id}" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
     `
+
     contenedorCarrito.appendChild(div)
     let botonEliminar = document.getElementById(`eliminar${productoAgregar.id}`)
 
@@ -58,10 +63,14 @@ function agregarAlCarrito(id) {
 
 
 
+
+
+
+
 function actualizarCarrito() {
     contadorCarrito.innerText = carritoDeCompras.length
     //localStorage.setItem('carritoDeCompras', JSON.stringify(carritoDeCompras))
-    precioTotal.innerHTML = carritoDeCompras.reduce((acumulador, el) => acc + el.precio, 0)
+    precioTotal.innerHTML = carritoDeCompras.reduce((acc, el) => acc + el.precio, 0)
 }
 
 
