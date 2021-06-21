@@ -238,11 +238,31 @@ ul.show {
 
 }
 
+.modal-carrito  {
+  margin: 5% 40% 5% 40%;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-around;
+  
 
+}
 
+.productoEnCarrito{
+  margin: 2%;
+  font-size: 25px;
+}
 
+#carrito-contenedor p {
+  margin: 4%;
+  font-size: 35px;
+}
 
-
-
+#titulo { 
+  font-size: 50px;
+  background-color:#fbe4ff;
+  border-radius: 15px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
 
 

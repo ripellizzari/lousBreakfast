@@ -8,8 +8,10 @@
 //     }
 // })
 
-// $('#definicion').append("<p>Un lugar pensado para que puedas personalizar al máximo tu experiencia. Podrás elegir entre nuestra variedad de productos y armar tu desayuno como más te guste. También tendrás la posibilidad de aprovechar nuestra modalidad de Take-Away, y disfrutar de tu café al aire libre. Además, con LOU'S podrás sorprender a esa persona tanimportante para vos, con nuestros envios personalizados, hechos a medida, de acuerdo sus gustos.</p>")
+$('#definicion').append("<p>Un lugar pensado para que puedas personalizar al máximo tu experiencia. Podrás elegir entre nuestra variedad de productos y armar tu desayuno como más te guste. También tendrás la posibilidad de aprovechar nuestra modalidad de Take-Away, y disfrutar de tu café al aire libre. Además, con LOU'S podrás sorprender a esa persona tanimportante para vos, con nuestros envios personalizados, hechos a medida, de acuerdo sus gustos.</p>")
 
+
+/********************************************************************** */
 
 var resultado = $('#resultado')
 

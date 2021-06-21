@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"/>
@@ -21,7 +24,10 @@
         <div class="logo-slogan"><label class="slogan">Tu Breakfast at Lou's</label></div>
       </div>
       <ul class="menu-items">
-        <li><button class="boton-carrito"><img src="https://i.ibb.co/m8vfKmF/carrito.png" width="30" height="30" alt=""></button></li>
+        <li>
+         <a  href="#carrito-contenedor">Carrito</a>       
+          </button>
+        </li>
         <li><a href="#productos">Productos</a></li>
         <li><a href="">Envios Personalizados</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -63,24 +69,47 @@
 
         <div class="modal-contenedor">
           <div class="modal-carrito">
-            <h3>Carrito</h3>
-            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
-           
-            <div id="carrito-contenedor">
-
-              <!--<div class="productoEnCarrito">
-                <p>Sandwiches</p>
-                <p>Precio: $300</p>
-                <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
-              </div> -->
+            <h3 >Carrito </h3>
+            <div id="btn-carrito"></div>
+            <!-- <span id="contadorCarrito"></span> -->
             </div>
-  
+            
+            
+          <div id="carrito-contenedor">
             <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p> 
-
+          </div>
             
       <section class="seguinos" id="contacto">
         
-        <!-- <h2>SEGUINOS</h2> -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>SEGUINOS</h2> -->
+
+
         
         <div class="redes-container" id="redes">
           <a href="https://www.facebook.com/"><img src="media/redes/facebook.png" alt="facebook-icon"></a>
