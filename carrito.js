@@ -9,12 +9,13 @@ const precioTotal = document.getElementById('precioTotal')
 
 
 // Estructura de display de productos
+let stockProductos = []
+// mostrarProductos(stockProductos)
+// console.log(stockProductos)
 
-mostrarProductos(stockProductos)
-console.log(stockProductos)
-
-function mostrarProductos(array) {
-    array.forEach((x) => {
+$.getJSON('stock.json', function mostrarProductos(data) {
+    data.forEach((x) => {
+        stockProductos.push(x)
         let div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML += ` 
@@ -31,7 +32,7 @@ function mostrarProductos(array) {
         let boton = document.getElementById(`${x.id}`)
         boton.addEventListener('click', () => { agregarAlCarrito(`${x.id}`) })
     });
-}
+})
 
 
 
@@ -46,6 +47,8 @@ function agregarAlCarrito(id) {
     console.log(productoAgregar)
     carritoDeCompras.push(productoAgregar)
     actualizarCarrito()
+    console.log(id)
+
 
     let div = document.createElement('div')
     div.classList.add('productoEnCarrito')
@@ -104,7 +107,7 @@ function agregarAlCarrito(id) {
 
 function actualizarCarrito() {
     contadorCarrito.innerText = carritoDeCompras.length
-    //localStorage.setItem('carritoDeCompras', JSON.stringify(carritoDeCompras))
+    localStorage.setItem('carritoDeCompras', JSON.stringify(carritoDeCompras))
     precioTotal.innerHTML = carritoDeCompras.reduce((acc, el) => acc + el.precio, 0)
 
 }

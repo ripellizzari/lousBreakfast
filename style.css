@@ -6,7 +6,6 @@
   outline: 0;
    ;
 }
-
 .menu {
   background-color: #fbe4ff;
   height: 75px;
@@ -17,31 +16,27 @@
   border-bottom: 1px solid #fff;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 }
-
 .logo-img { 
   position: absolute;
   top:2px;
+  margin-left: 15px;
   
 }
-
-.slogan {
+.logo-slogan .slogan {
   color: black;
   font-size: 40px;
   padding: 0 80px;
-  font-weight: bolder;
+  font-weight: bold;
 }
-
 .menu-items {
   display: flex;
   list-style: none;
   margin-right: 30px;
 }
-
 .menu-items li {
   border-radius: 3px;
   margin: 0 5px;
 }
-
 .menu-items li a {
   padding: 7px 13px;
   text-decoration: none;
@@ -50,14 +45,11 @@
   text-transform: uppercase;
   color: black;
 }
-
-.menu-items li:hover,
-li:active {
+.menu-items li:hover, li:active {
   background-color: rgba(0, 0, 0, 0.3);
   transition: 0.4s;
 }
-
-.btn-menu {
+.btn_menu {
   margin-right: 30px;
   font-size: 25px;
   color: black;
@@ -65,9 +57,11 @@ li:active {
   display: none;
 }
 
+
 ul.show {
   top: 65px;
 }
+
 
 @media screen and (max-width: 952px) {
   .logo {
@@ -78,7 +72,6 @@ ul.show {
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 858px) {
   .menu {
     height: 65px;
@@ -100,7 +93,6 @@ ul.show {
     margin: 30px 0 0 0;
     line-height: 30px;
   }
-
   .menu-items li:hover {
     background: none;
   }
@@ -112,13 +104,11 @@ ul.show {
   .menu-items li a:hover {
     color: #fbe4ff;
   }
-
   .logo {
     font-size: 25px;
     padding-left: 35px;
   }
 }
-
 @media screen and (max-width: 952px) {
   .menu-items {
     margin: 5px 0 0 0;
@@ -128,7 +118,6 @@ ul.show {
     height: calc(100% - 65px);
   }
 }
-
 .img-principal-container {
   height: 600px;
   background-image: url(https://i.ibb.co/Vv2hr0T/brooke-lark-Hl-Ncigv-Ui4-Q-unsplash.jpg);
@@ -136,20 +125,16 @@ ul.show {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .text-container {
   text-align-last: center;
   align-items: center;
   opacity: (0, 0, 0, 0.6);
 }
-
 .about-container {
   margin: 2% 10% 5% 10%;
   text-align: center;
   font-size: 50px;
 }
-
-
 #contenedor-galeria {
   display: flex;
   width: 100%;
@@ -159,40 +144,29 @@ ul.show {
   margin: auto;
   margin-bottom: 75px;
 }
-
 #contenedor-galeria div {
   margin-bottom: 40px;
 }
-
 .product-container h2 {
   text-align: center;
   font-size: 50px;
   margin-bottom: 20px;
 }
-
-
 .product-container h3 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
 }
-
-
-
-
 .producto p {
   text-align: center;
   margin-bottom: 10px;
 }
-
 .producto img {
   display: block;
 }
-
 .producto button {
   margin-left: calc(50% - 15px);
 }
-
 .galeria__img {
   width: 300px;
   height: 200px;
@@ -201,20 +175,15 @@ ul.show {
   filter: brightness(70%);
   border-radius: 10px;
 }
-
-
-
 .galeria__img:hover {
   transform: 1s;
   filter: brightness(100%) 1s;
 }
-
 .seguinos h2 {
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
 }
-
 .seguinos {
   padding-top: 50px;
   background-image: url(https://i.ibb.co/K6chpdT/cornelia-steinwender-y-E4o-Peuwu-TQ-unsplash.jpg);
@@ -222,7 +191,6 @@ ul.show {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .redes-container { 
   display: flex;
   justify-content: space-around;
@@ -230,7 +198,6 @@ ul.show {
   height: 200px;
   
 }
-
 .redes-container img{
   width: 35px;
   height: 35px;
@@ -243,7 +210,7 @@ ul.show {
   font-size: 50px;
   display: flex;
   justify-content: space-around;
-  
+
 
 }
 
@@ -257,6 +224,8 @@ ul.show {
   font-size: 35px;
 }
 
+
+
 #titulo { 
   font-size: 50px;
   background-color:#fbe4ff;
@@ -264,5 +233,3 @@ ul.show {
   padding-left: 3%;
   padding-right: 3%;
 }
-
-
