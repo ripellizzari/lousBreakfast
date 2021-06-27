@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Amatic SC", cursive;
   outline: 0;
-   ;
 }
 .menu {
   background-color: #fbe4ff;
@@ -16,11 +15,10 @@
   border-bottom: 1px solid #fff;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 }
-.logo-img { 
+.logo-img {
   position: absolute;
-  top:2px;
+  top: 2px;
   margin-left: 15px;
-  
 }
 .logo-slogan .slogan {
   color: black;
@@ -45,7 +43,8 @@
   text-transform: uppercase;
   color: black;
 }
-.menu-items li:hover, li:active {
+.menu-items li:hover,
+li:active {
   background-color: rgba(0, 0, 0, 0.3);
   transition: 0.4s;
 }
@@ -57,11 +56,9 @@
   display: none;
 }
 
-
 ul.show {
   top: 65px;
 }
-
 
 @media screen and (max-width: 952px) {
   .logo {
@@ -191,30 +188,25 @@ ul.show {
   background-size: cover;
   background-attachment: fixed;
 }
-.redes-container { 
+.redes-container {
   display: flex;
   justify-content: space-around;
   width: 100%;
   height: 200px;
-  
 }
-.redes-container img{
+.redes-container img {
   width: 35px;
   height: 35px;
-  
-
 }
 
-.modal-carrito  {
+.modal-carrito {
   margin: 5% 40% 5% 40%;
   font-size: 50px;
   display: flex;
   justify-content: space-around;
-
-
 }
 
-.productoEnCarrito{
+.productoEnCarrito {
   margin: 2%;
   font-size: 25px;
 }
@@ -224,11 +216,17 @@ ul.show {
   font-size: 35px;
 }
 
-
-
-#titulo { 
+#titulo {
   font-size: 50px;
-  background-color:#fbe4ff;
+  background-color: #fbe4ff;
+  border-radius: 15px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.btn-carrito {
+  font-size: 50px;
+  background-color: #fbe4ff;
   border-radius: 15px;
   padding-left: 3%;
   padding-right: 3%;
