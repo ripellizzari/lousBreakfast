@@ -224,17 +224,58 @@ ul.show {
   padding-right: 3%;
 }
 
+.modal-carrito { 
+  display: flex;
+  justify-content: center;
+
+  
+}
+
 #btn-carrito {
   font-size: 35px;
   background-color: #fbe4ff;
   border-radius: 10px;
   padding-left: 2%;
   padding-right: 2%; 
-  display: flex;
-  justify-content: center;
 }
 
 .precioProducto { 
   font-size: 50px;
   font-weight: bold;
 }
+
+#carrito-contenedor {
+  width:500px;
+}
+
+.modal-header h5 {
+  font-size: 35px;
+  font-weight: 500;
+
+}
+
+.alert {
+  width: max-content;
+}
+
+.precioProducto p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.modal-carrito button h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.modal-contenedor  {
+  display: flex;
+  justify-content: center;
+
+}
+
+.modal-contenedor h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+

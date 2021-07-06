@@ -4,7 +4,7 @@ const contenedorProducto = document.getElementById('contenedor-galeria')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 const contadorCarrito = document.getElementById('btn-carrito')
 const precioTotal = document.getElementById('precioTotal')
-
+const botonComprar = document.getElementById('compraRealizada')
 
 
 
@@ -62,11 +62,12 @@ function agregarAlCarrito(id) {
         let div = document.createElement('div')
         div.classList.add('productoEnCarrito')
         div.innerHTML = `
+        <hr>
         <p>${productoAgregar.nombre}</p>
-        <p>Precio: ${productoAgregar.precio}</p>
+        <p>Precio: $${productoAgregar.precio}</p>
         <p id=cantidad${productoAgregar.id}>Cantidad:${productoAgregar.cantidad}</p>
         <button id="eliminar${productoAgregar.id}" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
-        `
+        <hr>`
         contenedorCarrito.appendChild(div)
 
         let count = document.getElementById(`cantidad${id}`)
@@ -94,9 +95,9 @@ function agregarAlCarrito(id) {
 
 
 function actualizarCarrito() {
-    contadorCarrito.innerText = carritoDeCompras.length
+    contadorCarrito.innerText = carritoDeCompras.reduce((acc, el) => acc + el.cantidad, 0)
     localStorage.setItem('carritoDeCompras', JSON.stringify(carritoDeCompras))
-    precioTotal.innerHTML = carritoDeCompras.reduce((acc, el) => acc + el.precio, 0)
+    precioTotal.innerHTML = carritoDeCompras.reduce((acc, el) => acc + (el.precio * el.cantidad), 0)
 
 }
 
@@ -111,5 +112,13 @@ function actualizarCarrito() {
 // revisarLocal()
 
 
+botonComprar.addEventListener('click', () => {
+    swal({
+        title: "TU COMPRA FUE REALIZADA CON ÉXITO",
+        text: "Puedes pasar a retirarla cuando gustes!",
+        icon: "success",
+    });
+}
+)
 
 

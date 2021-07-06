@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Font awesome-->
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+
+    <!-- Sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -78,10 +81,11 @@
 <!-- CARRITO -->
 
         <div class="modal-contenedor">
-          <div class="modal-carrito">
-            <button id="btn-carrito" data-toggle="modal" data-target="#ventanaModal">
-              Carrito
-            </button>
+          <h2>TUS COMPRAS</h2>
+        </div>
+          <div class="modal-carrito">             
+            <button id="btn-carrito" data-toggle="modal" data-target="#ventanaModal">AÚN NO HAS COMPRADO
+             </button>
           </div>
         </div>
             
@@ -105,17 +109,19 @@
           
             <div class="modal-carrito">
               <div class="alert alert-success">
+                
                 <div id="carrito-contenedor">
-                  <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p> 
-                </div>
-              </div>
+                   </div>
+                   <p class="precioProducto"><strong>Precio total: $<span id="precioTotal"></span></strong></p> 
+                  </div>
+
             </div>  
           
           
           
             <div class="modal-footer">  
               <button class="btn btn-warning" type="button" data-dismiss="modal">CERRAR</button>
-              <button class="btn btn-success" type="button">COMPARR</button>
+              <button class="btn btn-success" id="compraRealizada" type="button">COMPARR</button>
               </div>
             </div>
            </div>
