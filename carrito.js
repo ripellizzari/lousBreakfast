@@ -5,7 +5,7 @@ const contenedorCarrito = document.getElementById('carrito-contenedor')
 const contadorCarrito = document.getElementById('btn-carrito')
 const precioTotal = document.getElementById('precioTotal')
 const botonComprar = document.getElementById('compraRealizada')
-
+const precioPro = document.getElementById('precioProducto')
 
 
 // Estructura de display de productos
@@ -113,11 +113,16 @@ function actualizarCarrito() {
 
 
 botonComprar.addEventListener('click', () => {
+    carritoDeCompras = []
+    contenedorCarrito.innerHTML = 'SEGUÍ COMPRANDO'
+    contadorCarrito.innerHTML = 'REALIZAR UNA NUEVA COMPRA'
+    precioTotal.innerHTML = ''
+    precioPro.innerHTML = ''
     swal({
         title: "TU COMPRA FUE REALIZADA CON ÉXITO",
         text: "Puedes pasar a retirarla cuando gustes!",
         icon: "success",
-    });
+    })
 }
 )
 
